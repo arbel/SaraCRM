@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Garden Crm Dashboard</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="inner">
+            <a href="#" id="logo">Organization Name Here</a>
+            <ul id="user-menu">
+                <li class="active"><a href="#">Account</a></li>
+                <li><a href="#">Logout</a></li>                
+            </ul><!--user-menu-->
+        </div><!--inner-->
+    </div><!--header-->
+    <div id="navigation">
+        <div class="inner">
+         <ul id="tabs">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Projects</a>
+                <ul id="projects-dropdown" class="dropdown">
+                    <li>
+                        
+                    </li>
+                </ul><!--project-dropdown-->
+            </li>
+            <li><a href="#">Contacts</a>
+                <ul id="contacts-dropdown" class="dropdown">
+                    <li>
+                        
+                    </li>
+                </ul><!--contacts-dropdown-->
+            </li>
+        </ul><!--tabs-->                    
+        <div id="search-bar">
+            <input type="text" id="search-input"/><input type="submit" class="search-submit" value="search"/>
+        </div><!--search-bar-->
+     </div><!--inner-->
+    </div><!--navigation-->
+    <div id="main-body">
+        <div class="inner">
+            <!-- #left-col -->
+            <div id="left-col">
+               
+                <!-- #add-projects.dashboard-project -->
+                <div class="add-form" id="add-project">
+                    <h2 ><a href="#">Add Project</a></h2>
+                    <div class="add-project-icon">Add Project</div>
+                    
+                    <div class="form-item" id="input-project-name-wrapper">
+                        <label for="input-project-name" class="form-label">Name</label>
+                        <input type="text" class="textfield" id="input-project-name" />
+                        <p class="form-description">Choose a title for the project</p>
+                    </div>
+
+                    <div class="form-item" id="input-project-contacts-wrapper">
+                        <label for="input-contacts-name" class="form-label">Contacts</label>
+                        <input type="text" class="textfield" id="input-project-contacts" />
+                        <a href="#" class="small-button" id="project-add-contact">Add Contact</a><a href="#">Create new Contact</a>
+                        <p class="form-description">Which Contacts are connected to this project?</p>
+                        <ul class="project-contacts">
+                            <li class="project-added-contact">
+                                <a href="#" class="contact-name">Idan Arbel, <strong>Arbel Designs</strong></a>
+                                <a href="#" class="contact-card" alt="Contact Information">Contact Infomration</a>
+                                <a href="#" title="Remove Contact" class="delete-button-small remove-contact">Remove Contact</a>
+                            </li>
+                            <li class="project-added-contact">
+                                <a href="#" class="contact-name">Contact Name, <strong>Comapny Name</strong></a>
+                                <a href="#" class="contact-card" alt="Contact Information">Contact Infomration</a>
+                                <a href="#"   title="Remove Contact" class="delete-button-small remove-contact">Remove Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form-item" id="input-project-description-wrapper">
+                        <label for="input-project-description" class="form-label">Description</label>
+                        <textarea class="input-project-description"></textarea>
+                        <p class="form-description">Describe the Project</p>
+                    </div>
+
+                    <div class="form-item" id="input-project-category-wrapper">
+                        <label for="input-project-category" class="form-label">Category</label>
+                        <select name="project-category" id="project-category">
+                                                   <option value="Web Design">Web Design</option>
+                                                   <option value="Web Development">Web Development</option>
+                                                   <option value="Logo Design">Logo Design</option>
+                        </select>
+                        <a href="#">Edit Categories</a>
+                                            
+                        <p class="form-description">Select the category for this projectt</p>
+                    </div>
+
+                    <div class="form-item" id="input-project-status-wrapper">
+                        <label for="input-project-status" class="form-label">Status</label>
+                        <select name="project-status" id="project-status">
+                                                   <option value="Active">Active</option>
+                                                   <option value="Prospective">Prospective</option>
+                                                   <option value="Lost">Lost</option>
+                        </select>
+                        <p class="form-description">At what stage is this project?</p>
+                    </div>
+                    
+                    <!--  -->
+                    <div class="add-payments fieldset">
+                        <h3 ><a href="#">Add Payments</a></h3>
+                        <div class="add-payment-icon">Add Paymnet</div>
+
+                       
+                        <div id="fixed-rate" class="payment-type">
+                             <div class="form-item" id="input-add-payment-type-wapper">
+                            <select name="" id="add-payment-type" name="add-payment-type">
+                                <option value="Fixed" selected="selected">Fixed</option>
+                                <option value="Hourly">Hourly</option>
+                                <option value="Monthly">Monthly</option>
+                            </select>
+                            <label for="add-payment-type" class="form-description-label">Payment Type</label>
+                        </div>
+
+                            <div id="input-add-payment-fixed-rate-wrapper" class="form-item">
+                                <div class="currency">$</div>
+                                <input type="text" class="textfield" id="input-add-payment-fixed-rate" />
+                                <label for="input-add-payment-fixed-rate" class="form-description-label">Rate</label>
+                            </div>
+
+                                                    <div id="input-add-payment-fixed-payment-date-wrapper" class="form-item">
+                                <input type="text" class="textfield" id="input-add-payment-fixed-payment-date" />
+                                <a href="#" class="datepicker">Datepicker</a>
+                                <label for="input-add-payment-fixed-payment-date" class="form-description-label">Expected Payment Date</label>
+                            </div>
+
+                            <div id="input-add-payment-fixed-completed-wrapper" class="form-item">
+                                <select name="input-add-payment-fixed-completed" id="input-add-payment-fixed-completed">
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <label for="input-add-payment-fixed-completed" class="form-description-label">Completed?</label>
+                            </div>
+
+                            <div id="input-add-payment-fixed-description-wrapper" class="form-item">
+                                <input type="text" class="textfield" id="input-add-payment-fixed-description" />
+                                <label for="input-add-payment-fixed-description" class="form-description-label">Short Description</label>
+                            </div>
+                            <a href="#" class="small-button" id="add-payment-button">Add Payment</a>
+                        </div><!--fixed rate-->
+
+                        <div id="hourly-rate" class="payment-type">
+                         <div class="form-item" id="input-add-payment-type-wapper">
+                            <select name="" id="add-payment-type" name="add-payment-type">
+                                <option value="Fixed">Fixed</option>
+                                <option value="Hourly" selected="selected">Hourly</option>
+                                <option value="Monthly">Monthly</option>
+                            </select>
+                            <label for="add-payment-type" class="form-description-label">Payment Type</label>
+                        </div>
+                            <div id="input-add-payment-hourly-rate-wrapper" class="form-item">
+                                <div class="currency">$</div>
+                                <input type="text" class="textfield" id="input-add-payment-hourly-rate" />
+                                <label for="input-add-payment-hourly-rate" class="form-description-label">Rate</label>
+                            </div>
+
+                              <div id="input-add-payment-hourly-hours-wrapper" class="form-item">
+                                
+                                <input type="text" class="textfield" id="input-add-payment-hourly-hours" />
+                                <label for="input-add-payment-hourly-hours" class="form-description-label">How many hours</label>
+                            </div>
+
+                             <div id="input-add-payment-hourly-payment-date-wrapper" class="form-item">
+                                <input type="text" class="textfield" id="input-add-payment-hourly-payment-date" />
+                                <a href="#" class="datepicker">Datepicker</a>
+                                <label for="input-add-payment-hourly-payment-date" class="form-description-label">Expected payment date</label>
+                            </div>
+
+                            <div id="input-add-payment-hourly-completed-wrapper" class="form-item">
+                                <a href="#" title="Set Payment as Completed" class="payment-not-completed">Set payment as Completed</a>
+                                <label for="input-add-payment-hourly-completed" class="form-description-label">Completed?</label>
+                            </div>
+
+                            <div id="input-add-payment-hourly-description-wrapper" class="form-item">
+                                <input type="text" class="textfield" id="input-add-payment-hourly-description" />
+                                <label for="input-add-payment-hourly-description" class="form-description-label">Short Description</label>
+                            </div>
+                            <a href="#" class="small-button" id="add-payment-button">Add Payment</a>
+                        </div><!--fixed rate-->
+
+                        <div id="monthly-rate" class="payment-type">
+                         <div class="form-item" id="input-add-payment-type-wapper">
+                            <select name="" id="add-payment-type" name="add-payment-type">
+                                <option value="Fixed">Fixed</option>
+                                <option value="Hourly">Hourly</option>
+                                <option value="Monthly" selected="selected">Monthly</option>
+                            </select>
+                            <label for="add-payment-type" class="form-description-label">Payment Type</label>
+                        </div>
+                            <div id="input-add-payment-monthly-rate-wrapper" class="form-item">
+                                <div class="currency">$</div>
+                                <input type="text" class="textfield" id="input-add-payment-monthly-rate" />
+                                <label for="input-add-payment-fixed-rate" class="form-description-label">Rate</label>
+                            </div>
+
+                              <div id="input-add-payment-monthly-months-wrapper" class="form-item">
+                                
+                                <input type="text" class="textfield" id="input-add-payment-monthly-months" />
+                                <label for="input-add-payment-monthly-months" class="form-description-label">How many months</label>
+                            </div>
+
+                             <div id="input-add-payment-monthly-payment-date-wrapper" class="form-item">
+                                <input type="text" class="textfield" id="input-add-payment-monthly-payment-date" />
+                                <a href="#" class="datepicker">Datepicker</a>
+                                <label for="input-add-payment-monthly-payment-date" class="form-description-label">Starting on</label>
+                            </div>
+
+                            <div id="input-add-payment-monthly-completed-wrapper" class="form-item">
+                                <a href="#" title="Set Payment as Not Completed" class="payment-completed">Set payment as Not Completed</a>
+                                <label for="input-add-payment-monthly-completed" class="form-description-label">Completed?</label>
+                            </div>
+
+                            <div id="input-add-payment-monthly-description-wrapper" class="form-item">
+                                <input type="text" class="textfield" id="input-add-payment-monthly-description" />
+                                <label for="input-add-payment-monthly-description" class="form-description-label">Short Description</label>
+                            </div>
+                            <a href="#" class="small-button" id="add-payment-button">Add Payment</a>
+                        </div><!--monthly rate-->
+
+
+
+                        <!-- #payment-list -->
+                        <ul id="payments-list">
+                            <li class="single-payment">
+                                <div class="payment-completed-icon payment-completed">Completed</div>
+                                <div class="payment-value">$500</div>
+                                <div class="payment-name">SEO Retainer</div>
+                                <div class="payment-date">10th Nov 2012</div>
+                                <div class="payment-type">(Monthly)</div>
+                                <a href="#" class="delete-payment  delete-button-small" title="Remove Payment">Remove Payment</a>
+                            </li>
+                               <li class="single-payment">
+                                <div class="payment-completed-icon">Completed</div>
+                                <div class="payment-value">$500</div>
+                                <div class="payment-name">SEO Retainer</div>
+                                <div class="payment-date">10th Nov 2012</div>
+                                <div class="payment-type">(Monthly)</div>
+                                <a href="#" class="delete-payment  delete-button-small" title="Remove Payment">Remove Payment</a>
+                            </li>
+                               <li class="single-payment">
+                                <div class="payment-completed-icon payment-completed">Completed</div>
+                                <div class="payment-value">$500</div>
+                                <div class="payment-name">SEO Retainer</div>
+                                <div class="payment-date">10th Nov 2012</div>
+                                <div class="payment-type">(Monthly)</div>
+                                <a href="#" class="delete-payment  delete-button-small" title="Remove Payment">Remove Payment</a>
+                            </li>
+                               <li class="single-payment">
+                                <div class="payment-completed-icon ">Completed</div>
+                                <div class="payment-value">$500</div>
+                                <div class="payment-name">($75 * 10) SEO Retainer</div>
+                                <div class="payment-date">10th Nov 2012</div>
+                                <div class="payment-type">(hourly)</div>
+                                <a href="#" class="delete-payment  delete-button-small" title="Remove Payment">Remove Payment</a>
+                            </li>
+                        </ul>
+                        <!-- /#payment-list --> 
+                    </div>
+                    <!-- / -->
+
+                    <!--  -->
+                    <ul class="action-buttons">
+                        
+                        <li class="green-button"><a href="#" class="add-project ">Add Project</a></li>
+                        <li class="cancel-link">or <a href="#">Cancel</a></li>
+                    </ul>
+                    <!-- / -->  
+                                       
+                </div>
+                <!-- /#active-projects.dashboard-project -->
+            
+
+   
+            </div>
+            <!-- /#left-col -->                     
+
+            <!-- #right-col -->
+            <div id="right-col" >
+                <!-- #action-buttons -->
+                <div  class="right-col-block"><ul class="action-buttons">
+                  <li class="green-button"><a href="#" class="add-project ">Add Project</a></li><li class="blue-button"><a href="#" class="add-contact ">Add Contact</a></li></ul>
+                </div>
+                <!-- /#action-buttons -->       
+                <div id="tips" class="right-col-block">
+                    <h3 class="block-title">Tip</h3>
+                    <div class="tip">
+<p>habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eg</p>
+<p>
+et, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque </p>
+<p>
+sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fe</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- /#right-col -->        
+        </div> <!--inner-->
+            
+
+   </div><!--min-body-->
+           
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Garden Crm Dashboard</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="inner">
+            <a href="#" id="logo">Organization Name Here</a>
+            <ul id="user-menu">
+                <li class="active"><a href="#">Account</a></li>
+                <li><a href="#">Logout</a></li>                
+            </ul><!--user-menu-->
+        </div><!--inner-->
+    </div><!--header-->
+    <div id="navigation">
+        <div class="inner">
+         <ul id="tabs">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Projects</a>
+                <ul id="projects-dropdown" class="dropdown">
+                    <li>
+                        
+                    </li>
+                </ul><!--project-dropdown-->
+            </li>
+            <li><a href="#">Contacts</a>
+                <ul id="contacts-dropdown" class="dropdown">
+                    <li>
+                        
+                    </li>
+                </ul><!--contacts-dropdown-->
+            </li>
+        </ul><!--tabs-->                    
+        <div id="search-bar">
+            <input type="text" id="search-input"/><input type="submit" class="search-submit" value="search"/>
+        </div><!--search-bar-->
+     </div><!--inner-->
+    </div><!--navigation-->
+    <div id="main-body">
+        <div class="inner">
+            <!-- #left-col -->
+            <div id="left-col">
+                <!-- #dashboard-header -->
+                <div id="dashboard-header">
+                <div id="this-month" class="month">
+                    <h3>This Month</h3>                         
+                    <ul class="graph">      
+                        <li class="col per20">20%</li>                  
+                        <li class="col per10">10%</li>
+                        <li class="col per60">60%</li>
+                        <li class="col per40 current-col">40%</li>
+                        <li class="col per10">10%</li>
+                    </ul>
+                    <div class="bottom-section">
+                        <div class="payments">
+                            <div class="number">50</div>
+                            <label for="">Payments</label>
+                        </div>
+                        <div class="valued">
+                            <div class="number">$1,050</div>
+                            <label for="">Valued</label>
+                        </div>
+                    </div>
+ 
+                </div>
+                <!-- #next-month.month -->
+                <div id="next-month" class="month">
+                    <h3>Next Month</h3>
+                    <!-- .graph -->
+                    <ul class="graph">
+                        <li class="col per20">20%</li>                  
+                        <li class="col per10">10%</li>
+                        <li class="col per60">60%</li>
+                        <li class="col per40">40%</li>
+                        <li class="col per10  current-col">10%</li>
+
+                    </ul>
+
+
+                    <!-- /.graph -->
+                    <!-- .bottom-section -->
+                    <div class="bottom-section">
+                        <!-- .payments -->
+                        <div class="payments">
+                            <!-- .number -->
+                            <div class="number">3</div>
+                            <!-- /.number -->
+                            <label for="">Payments</label>
+                        </div>
+                        <!-- /.payments -->
+                        <!-- .valued -->
+                        <div class="valued">
+                            <!-- .number -->
+                            <div class="number">$434</div>
+                            <!-- /.number -->
+                            <label for="">Valued</label>
+                        </div>
+                        <!-- /.valued -->
+
+                    </div>
+                    <!-- /.bottom-section -->
+                </div>
+                <!-- /#next-month.month -->
+                </div>
+                <!-- /#dashboard-header -->
+
+                <!-- #active-projects.dashboard-project -->
+                <div class="dashboard-project" id="active-projects">
+                    <h2 class="open"><a href="#">Active Projects</a></h2>
+                    <div class="active-projects-icon">Active Projects</div>
+                    <!-- .projects-header -->
+                    <div class="projects-header">
+                        <!-- .number-of-projects -->
+                        <div class="number-of-projects">
+                             <div class="number">20</div>
+                             <label for="">Projects</label>
+                        </div>
+                        <!-- /.number-of-projects -->
+                        <!-- .valued-projects -->
+                        <div class="valued-projects">
+                            <div class="number">$1,040</div>
+                            <label for="">Valued</label>            
+                        </div>
+                        <!-- /.valued-projects -->
+                        <!-- .billed-projects -->
+                        <div class="billed-projects">
+                            <div class="number">$1,040</div>
+                            <label for="">Billed</label>
+                        </div>
+                        <!-- /.billed-projects -->
+                        <!-- .remaining-projects -->
+                        <div class="remaining-projects">
+                            <div class="number">$33</div>
+                            <label for="">Remaining</label>
+                        </div>
+                        <!-- /.remaining-projects -->
+                        <div class="completed">
+                            <div class="bar-outer">
+                                <div class="bar-inner per50">50%</div>
+                            </div>
+                            <label for="">50% Completed</label>
+                        </div>
+                    </div>
+                    <!-- /.projects-header -->
+                    <!-- #active-projects-list.projects-list -->
+                    <div class="projects-list" id="active-projects-list">
+                        <ul>
+                            <!-- .project-row -->
+                            <li class="project-row">
+                                <!-- .project-name -->
+                                <div class="project-name"><a href="#"><h5>Tom idan crm</h5></a><div class="category web-design">Web Design</div></div>
+                                <!-- /.project-name -->
+                                <!-- .project-valued -->
+                                <div class="project-valued"><div class="number">$1,050</div>
+                                <label for="">Valued</label></div>
+                                <!-- /.project-valued -->
+                                <!-- .project-billed -->
+                                <div class="project-billed"><div class="number">$30</div>
+                                <label for="">Billed</label></div>
+                                <!-- /.project-billed -->
+                                <!-- .project-remaining -->
+                                <div class="project-remaining"><div class="number">$555</div>
+                                <label for="">Remaining</label></div>
+                                <!-- /.project-remaining -->
+                                <!-- .project-payments -->
+                                <div class="project-payments"><div class="number">11</div>
+                                <label for="">Payments</label></div>
+                                <!-- /.project-payments -->
+                                <!-- .project-notes -->
+                                <div class="project-notes"><div class="number">4</div>
+                                <label for="">Notes</label></div>
+                                <!-- /.project-notes -->
+                                <!-- .project-progress -->
+                                <div class="project-progress"><div class="bar-outer">
+                                <div class="bar-inner per50">50%</div>
+                            </div>
+                            <label for="">50%</label></div>
+                                <!-- /.project-progress -->
+                            </li>
+                            <!-- /.project-row -->
+                            <li class="project-row">
+                                <!-- .project-name -->
+                                <div class="project-name"><a href="#"><h5>Tom idan crm</h5></a><div class="category web-design">Web Design</div></div>
+                                <!-- /.project-name -->
+                                <!-- .project-valued -->
+                                <div class="project-valued"><div class="number">$1,050</div>
+                                <label for="">Valued</label></div>
+                                <!-- /.project-valued -->
+                                <!-- .project-billed -->
+                                <div class="project-billed"><div class="number">$30</div>
+                                <label for="">Billed</label></div>
+                                <!-- /.project-billed -->
+                                <!-- .project-remaining -->
+                                <div class="project-remaining"><div class="number">$555</div>
+                                <label for="">Remaining</label></div>
+                                <!-- /.project-remaining -->
+                                <!-- .project-payments -->
+                                <div class="project-payments"><div class="number">11</div>
+                                <label for="">Payments</label></div>
+                                <!-- /.project-payments -->
+                                <!-- .project-notes -->
+                                <div class="project-notes"><div class="number">4</div>
+                                <label for="">Notes</label></div>
+                                <!-- /.project-notes -->
+                                <!-- .project-progress -->
+                                <div class="project-progress"><div class="bar-outer">
+                                <div class="bar-inner per10">10%</div>
+                            </div>
+                            <label for="">10%</label></div>
+                                <!-- /.project-progress -->
+                            </li>
+                            <!-- /.project-row -->
+                            <li class="project-row">
+                                <!-- .project-name -->
+                                <div class="project-name"><a href="#"><h5>Tom idan crm</h5></a><div class="category web-design">Web Design</div></div>
+                                <!-- /.project-name -->
+                                <!-- .project-valued -->
+                                <div class="project-valued"><div class="number">$1,050</div>
+                                <label for="">Valued</label></div>
+                                <!-- /.project-valued -->
+                                <!-- .project-billed -->
+                                <div class="project-billed"><div class="number">$30</div>
+                                <label for="">Billed</label></div>
+                                <!-- /.project-billed -->
+                                <!-- .project-remaining -->
+                                <div class="project-remaining"><div class="number">$555</div>
+                                <label for="">Remaining</label></div>
+                                <!-- /.project-remaining -->
+                                <!-- .project-payments -->
+                                <div class="project-payments"><div class="number">11</div>
+                                <label for="">Payments</label></div>
+                                <!-- /.project-payments -->
+                                <!-- .project-notes -->
+                                <div class="project-notes"><div class="number">4</div>
+                                <label for="">Notes</label></div>
+                                <!-- /.project-notes -->
+                                <!-- .project-progress -->
+                                <div class="project-progress"><div class="bar-outer">
+                                <div class="bar-inner per90">90%</div>
+                            </div>
+                            <label for="">90%</label></div>
+                                <!-- /.project-progress -->
+                            </li>
+                            <!-- /.project-row -->
+                        </ul>
+                        <div class="project-list-footer"><a href="#" class="collapse">Hide Projects</a><a href="#" class="expand">View 10 more active projects</a></div>
+                    </div>
+                    <!-- /#active-projects-list.projects-list -->
+                </div>
+                <!-- /#active-projects.dashboard-project -->
+            
+
+             <!-- #prospective-projects.dashboard-project -->
+                <div class="dashboard-project" id="prospective-projects">
+                    <h2 class="open"><A href="#">Prospective Projects</a></h2>
+                    <div class="prospective-projects-icon">Prospective Projects</div>
+                    <!-- .projects-header -->
+                    <div class="projects-header">
+                        <!-- .number-of-projects -->
+                        <div class="number-of-projects">
+                             <div class="number">20</div>
+                             <label for="">Projects</label>
+                        </div>
+                        <!-- /.number-of-projects -->
+                        <!-- .valued-projects -->
+                        <div class="valued-projects">
+                            <div class="number">$1,040</div>
+                            <label for="">Valued</label>            
+                        </div>
+                        <!-- /.valued-projects -->
+                       
+                    </div>
+                    <!-- /.projects-header -->
+                    <!-- #active-projects-list.projects-list -->
+                    <div class="projects-list" id="prospective-projects-list">
+                        <ul>
+                            <!-- .project-row -->
+                            <li class="project-row">
+                                <!-- .project-name -->
+                                <div class="project-name"><a href="#"><h5>Tom idan crm</h5></a><div class="category web-design">Web Design</div></div>
+                                <!-- /.project-name -->
+                                <!-- .project-valued -->
+                                <div class="project-valued"><div class="number">$1,050</div>
+                                <label for="">Valued</label></div>
+                                <!-- /.project-valued -->
+                                <!-- .project-billed -->
+                           
+                                <!-- .project-notes -->
+                                <div class="project-notes"><div class="number">4</div>
+                                <label for="">Notes</label></div>
+                                <!-- /.project-notes -->
+                               <!-- .last-updated -->
+                               <div class="last-updated"><div class="number">Feb 2 2011</div>
+                               <label for="">Last Updated</label></div>
+                               <!-- /.last-updated -->
+                            </li>
+                            <!-- /.project-row -->
+                              <!-- .project-row -->
+                            <li class="project-row">
+                                <!-- .project-name -->
+                                <div class="project-name"><a href="#"><h5>Tom idan crm</h5></a><div class="category web-design">Web Design</div></div>
+                                <!-- /.project-name -->
+                                <!-- .project-valued -->
+                                <div class="project-valued"><div class="number">$1,050</div>
+                                <label for="">Valued</label></div>
+                                <!-- /.project-valued -->
+                                <!-- .project-billed -->
+                           
+                                <!-- .project-notes -->
+                                <div class="project-notes"><div class="number">4</div>
+                                <label for="">Notes</label></div>
+                                <!-- /.project-notes -->
+                               <!-- .last-updated -->
+                               <div class="last-updated"><div class="number">Feb 2 2011</div>
+                               <label for="">Last Updated</label></div>
+                               <!-- /.last-updated -->
+                            </li>
+                            <!-- /.project-row -->   
+                        </ul>
+                        <div class="project-list-footer"><a href="#" class="collapse">Hide Projects</a><a href="#" class="expand">View 10 more prospective projects</a></div>
+                    </div>
+                    <!-- /#prospective-projects-list.projects-list -->
+                </div>
+                <!-- /#prospective-projects.dashboard-project -->
+
+             <!-- #lost-projects.dashboard-project -->
+                <div class="dashboard-project" id="lost-projects">
+                    <h2 class="closed"><a href="#">Lost Projects</a></h2>
+                    <div class="lost-projects-icon">Lost Projects</div>
+                    <!-- .projects-header -->
+                    <div class="projects-header">
+                        <!-- .number-of-projects -->
+                        <div class="number-of-projects">
+                             <div class="number">20</div>
+                             <label for="">Projects</label>
+                        </div>
+                        <!-- /.number-of-projects -->
+                        <!-- .valued-projects -->
+                        <div class="valued-projects">
+                            <div class="number">$1,040</div>
+                            <label for="">Valued</label>            
+                        </div>
+                        <!-- /.valued-projects -->
+                       
+                    </div>
+                    <!-- /.projects-header -->
+                    <!-- #lost-projects-list.projects-list -->
+                    <div class="projects-list" id="lost-projects-list">
+                        <ul>
+                            <!-- .project-row -->
+                            <li class="project-row">
+                                <!-- .project-name -->
+                                <div class="project-name"><a href="#"><h5>Tom idan crm</h5></a><div class="category web-design">Web Design</div></div>
+                                <!-- /.project-name -->
+                                <!-- .project-valued -->
+                                <div class="project-valued"><div class="number">$1,050</div>
+                                <label for="">Valued</label></div>
+                                <!-- /.project-valued -->                               
+                                <!-- .project-notes -->
+                                <div class="project-notes"><div class="number">4</div>
+                                <label for="">Notes</label></div>
+                                <!-- /.project-notes -->
+                               
+                            </li>
+                            <!-- /.project-row -->
+                            
+                        </ul>
+                        <div class="project-list-footer"><a href="#" class="expand">Expand</a></div>
+                    </div>
+                    <!-- /#active-projects-list.projects-list -->
+                </div>
+                <!-- /#active-projects.dashboard-project -->
+            </div>
+            <!-- /#left-col -->                     
+
+            <!-- #right-col -->
+            <div id="right-col" >
+                <!-- #action-buttons -->
+                <div  class="right-col-block"><ul id="action-buttons">
+                    <li class="green-button"><a href="#" class="add-project ">Add Project</a></li><li class="blue-button"><a href="#" class="add-contact ">Add Contact</a></li></ul>
+                </div>
+                <!-- /#action-buttons -->       
+                <div id="upcoming-payments" class="right-col-block">
+                    <h3 class="block-title">Upcoming Payments</h3>
+                    <div class="payment-group" id="today">
+                        <h4>Today</h4>
+                        <ul class="payment-list">
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+
+                        </ul>
+                    </div>    <!-- /end #today -->
+                    <div class="payment-group" id="tomorrow">
+                        <h4>Tomorrow</h4>
+                        <ul class="payment-list">
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+
+                        </ul>
+                    </div>    <!-- /end #tomorrow -->
+                    <div class="payment-group" id="next-week">
+                        <h4>Next Week</h4>
+                        <ul class="payment-list">
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+
+                        </ul>
+                    </div>    <!-- /end #next-week -->
+                </div><!-- /end #upcoming-payments -->
+                <div id="billed-payments" class="right-col-block">
+                    <h3 class="block-title">Billed Payments</h3>
+                    <div class="payment-group">                        
+                        <ul class="payment-list">
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+                            <li class="payment">
+                                <div class="payment-value"><div class="number">$500</div>
+                                <label for="">Fixed</label></div>
+                                <div class="payment-project-title"><a href="#"><h5>Tom idan crm</h5></a>
+                                <div class="category web-design">Web Design</div></div>
+                            </li>
+
+                        </ul>
+                    </div>    <!-- /end #payment-grou -->
+                    
+                </div><!-- /end #billed-payments -->                
+
+                
+
+            </div>
+            <!-- /#right-col -->        
+        </div> <!--inner-->
+            
+
+   </div><!--min-body-->
+           
+</body>
+</html>
