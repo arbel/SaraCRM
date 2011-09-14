@@ -1009,3 +1009,57 @@ margin:10px;
 
 .payment-type {display:block; clear:both;
 }
+
+/***** messages ***/
+
+.message {
+padding:10px;
+margin-bottom:10px;
+margin-top:10px;
+color:white;
+font-size:11px;
+font-weight:bold;
+}
+.message h5 {
+text-transform:uppercase;
+font-size:13px;
+color:white;
+}
+.message.error h5 {
+background:url(images/error-icon.png) no-repeat left 3px;
+padding-left:25px;
+padding-bottom:2px;
+padding-top:2px;
+}
+.message.success h5 {
+background:url(images/success-icon.png) no-repeat left 3px;
+padding-left:25px;
+padding-bottom:2px;
+padding-top:2px;
+}
+.message ul {
+margin-top:5px;
+margin-left:25px;
+}
+.message li {
+margin-bottom:5px;
+}
+.message.error {
+background:url(images/error-bg.jpg) #b23c3c top repeat-x;
+border:1px solid #8d3535;
+}
+
+.message.success {
+background:url(images/success-bg.jpg) #88bf44 top repeat-x;
+border:1px solid #6f9a39;
+}
+.inner>.message {
+width:680px;
+text-align:center;
+margin-bottom:0;
+}
+
+.inner>.message h5{
+display:inline-block;
+text-align:center;
+}
