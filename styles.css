@@ -583,7 +583,7 @@ padding-left:60px;
 text-shadow:1px 1px 1px rgba(0,0,0,0.3);
 
 }
-#main-body .blue-button:hover {
+.blue-button:hover {
 background:url(images/blue-button-bg.jpg) top repeat-x;
 }
 
@@ -1325,4 +1325,79 @@ position:absolute;
 bottom:-1px;
 z-index:200;
 left:0px;
+}
+
+/** contact lightbox **/
+
+input.textfield-medium {
+width:140px;
+margin-right:6px;
+margin-bottom:6px;
+}
+
+input.textfield-long {
+display:block;
+width:305px;
+margin-bottom:10px;
+}
+.lightbox #input-contact-description {
+width:535px;
+}
+.contact-email-wrapper{
+afloat:left;
+display:inline-block;
+margin-right:6px;
+}
+
+.contact-website-wrapper {
+afloat:left;
+display:inline-block;
+
+
+}
+.label-above {
+display:Block;
+color:#4a4a4a;
+font-size:17px;
+font-weight:bold;
+text-transform:none;
+margin-bottom:10px;
+}
+
+.lightbox .action-buttons .blue-button {
+background:url(images/blue-button-bg.jpg) bottom repeat-x;
+width:auto;
+display:inline-block;
+float:left;
+}
+.action-buttons .cancel-link{
+text-decoration:none;
+color:#000000;
+text-transform:none;
+margin-top:20px;
+}
+
+::-webkit-input-placeholder  { color:#aaa; }
+input:-moz-placeholder { color:#aaa; }
+
+.field-group {
+display:inline-block;
+}
+.field-group .form-description {
+margin:0;
+}
+
+.field-group.block-group {
+display:block;
+margin-left:120px;
+}
+
+.field-group.first-group {margin-left:120px;}
+
+.large-button {
+float:left;
+}
+
+.logo-preview {
+margin-left:120px;
 }
