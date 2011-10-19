@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Garden Crm Dashboard</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="inner">
+            <a href="#" id="logo">Organization Name Here</a>
+            <ul id="user-menu">
+                <li class="active"><a href="#">Account</a></li>
+                <li><a href="#">Logout</a></li>                
+            </ul><!--user-menu-->
+        </div><!--inner-->
+    </div><!--header-->
+    <div id="navigation">
+        <div class="inner">
+         <ul id="tabs">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Projects</a>
+                <ul id="projects-dropdown" class="dropdown">
+                    <li>
+                        
+                    </li>
+                </ul><!--project-dropdown-->
+            </li>
+            <li><a href="#">Contacts</a>
+                <ul id="contacts-dropdown" class="dropdown">
+                    <li>
+                        
+                    </li>
+                </ul><!--contacts-dropdown-->
+            </li>
+        </ul><!--tabs-->                    
+        <div id="search-bar">
+            <input type="text" id="search-input"/><input type="submit" class="search-submit" value="search"/>
+        </div><!--search-bar-->
+     </div><!--inner-->
+    </div><!--navigation-->
+    <div id="main-body">
+        
+        <div class="inner">
+        <div class="success message"><h5>Payment Successfuly added Horay!</h5>     </div>
+            <!-- #left-col -->
+            <div id="left-col">
+                
+                <!-- #add-projects.dashboard-project -->
+                <div class="add-form" id="add-contact">
+                    <h2 ><a href="#">Add Contact</a></h2>
+                    <div class="add-project-icon">Add Contact</div>
+                    
+                    <div class="contact-name-wrapper">
+        <div id="contact-name" class="form-item">
+            
+            <label for="input-contact-first-name" class="form-contact-name-label form-label">Name</label>
+            <div class="field-group">
+                <input type="text" class="textfield textfield-medium" id="input-contact-first-name"  />
+                  <p class="form-description">First Name</p>
+            </div>
+            <div class="field-group">
+                <input type="text" class="textfield textfield-medium" id="input-contact-last-name" />
+                  <p class="form-description">Last Name</p>
+            </div>
+           
+        </div>
+    </div>
+
+     <div class="contact-company-wrapper">
+        <div id="contact-company" class="form-item">
+            <label for="input-contact-company" class="form-contact-company-label form-label">Company</label>
+            <input type="text" class="textfield " id="input-contact-company"  />
+             <p class="form-description">Name of the Company</p>
+        </div>
+    </div>
+
+    <div class="contact-logo-wrapper">
+        <div id="contact-logo" class="form-item">
+            <label for="input-contact-logo" class="form-contact-logo-label form-label">Logo</label>
+            <input type="text" class="textfield " id="input-contact-company"  />
+              <a href="#" class="small-button" id="browse-logo-name">Browse</a>
+             <p class="form-description">Upload Client Logo</p>
+              <p class="form-description">Max 500k | jpg, png, gif, tiff</p>
+              <img class="logo-preview" src="images/customer-logo.png"/>
+        </div>
+    </div>
+
+     <div class="contact-email-wrapper">
+        <div id="contact-email" class="form-item">
+            <label for="input-contact-email" class="form-contact-email-label form-label">Email</label>
+            <input type="text" class="textfield " id="input-contact-email"  />
+              <p class="form-description">Contact's Email Address</p>
+        </div>
+    </div>    
+
+    <div class="contact-website-wrapper">
+        <div id="contact-website" class="form-item">
+            <label for="input-contact-website" class="form-contact-website-label form-label">Website</label>
+            <input type="text" class="textfield " id="input-contact-website"  />
+              <p class="form-description">Contact's Webiste Address</p>
+        </div>
+    </div> 
+    <div class="contact-phone-wrapper">
+        <div id="contact-phone" class="form-item">
+            
+            <label for="input-contact-home-phone" class="form-contact-phone-label form-label">Phone</label>
+            <div class="field-group">
+                <input type="text" class="textfield textfield-medium" id="input-contact-home-phone" placeholder="Home" />
+                 <p class="form-description">Home</p>
+            </div>
+            <div class="field-group">
+                <input type="text" class="textfield textfield-medium" id="input-contact-work-phone" placeholder="Work" />
+                 <p class="form-description">Work</p>
+            </div>
+           
+        </div>
+    </div>
+   
+     <div class="contact-country-wrapper">
+        <div id="contact-country" class="form-item">
+            <label for="input-contact-country" class="form-contact-country-label form-label">Country</label>
+            <select type="text" class="selectfield " id="input-contact-country"  />
+                <option>United States</option>
+            </select>
+        </div>
+    </div>        
+   <div class="contact-address-wrapper">
+        <div id="contact-address" class="form-item">
+            
+            <label for="input-contact-address" class="form-contact-address-label form-label">Address</label>
+            
+            <div class="field-group block-group">
+                <input type="text" class="textfield textfield-long" id="input-contact-street1"  />
+                                 <p class="form-description">Street 1</p>
+
+            </div>
+            <div class="field-group block-group">
+                <input type="text" class="textfield textfield-long" id="input-contact-street2"  />
+                                 <p class="form-description">Steet 2</p>
+
+            </div>
+            <div class="field-group first-group">
+                <input type="text" class="textfield textfield-medium" id="input-contact-city" placeholder="" />
+                                 <p class="form-description">City</p>
+
+            </div>
+            <div class="field-group">
+                <input type="text" class="textfield textfield-medium" id="input-contact-state" placeholder="" />
+                                 <p class="form-description">State</p>
+
+            </div>
+            <div class="field-group">
+                <input type="text" class="textfield textfield-medium" id="input-contact-zip" placeholder="" />
+                                 <p class="form-description">Zip</p>
+            </div>
+
+           
+        </div>
+    </div>  
+    
+      <div class="contact-description-wrapper">
+        <div id="contact-description" class="form-item">
+            
+            <label for="input-contact-description" class="form-contact-description-label form-label">Description</label>
+            <textarea type="text" class="textareafield" id="input-contact-description" ></textarea>
+              <p class="form-description">Describe the Project</p>
+
+            
+           
+        </div>
+    </div>    
+                   
+                   
+
+                    <!--  -->
+                    <ul class="action-buttons">
+                        
+                        <li class="large-button green-button"><a href="#" class="add-contact ">Add Contact</a></li>
+                        <li class="cancel-link">or <a href="#">Cancel</a></li>
+                    </ul>
+                    <!-- / -->  
+                                       
+                </div>
+                <!-- /#active-projects.dashboard-project -->
+            
+
+   
+            </div>
+            <!-- /#left-col -->                     
+
+            <!-- #right-col -->
+            <div id="right-col" >
+                <!-- #action-buttons -->
+                <div  class="right-col-block"><ul class="action-buttons">
+                  <li class="green-button"><a href="#" class="add-project ">Add Project</a></li><li class="blue-button"><a href="#" class="add-contact ">Add Contact</a></li></ul>
+                </div>
+                <!-- /#action-buttons -->       
+                <div id="tips" class="right-col-block">
+                    <h3 class="block-title">Tip</h3>
+                    <div class="tip">
+<p>habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eg</p>
+<p>
+et, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque </p>
+<p>
+sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fe</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- /#right-col -->        
+        </div> <!--inner-->
+            
+
+   </div><!--min-body-->
+
+  
+  
+  
+
+
+</body>
+</html>
