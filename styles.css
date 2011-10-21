@@ -1500,3 +1500,44 @@ background:url(images/tri.png) no-repeat top left;
 bottom:-20px;
 left:30px;
 }
+
+.project-status {
+background:url(images/status-bgf.png) repeat-x; 
+float:right;
+margin:10px;
+}
+.project-status li a {
+color:#636363;
+font-weight:Bold;
+text-transform:uppercase;
+font-size:12px;
+display:block;
+background:url(images/status-bgf.png) repeat-x 0px -14px; 
+padding:15px 15px;
+margin:0;
+}
+
+.project-status li {
+display:inline-block;
+margin:-2px !important;
+}
+
+.project-status li.prospective-button.active a, .project-status li.prospective-button:hover a{
+background:url(images/prospecive-bg.png) repeat-x;
+color:White;
+}
+
+.project-status li.active-button.active a, .project-status li.active-button:hover a{
+background:url(images/active-bg.png) repeat-x;
+color:White;
+}
+
+.project-status li.completed-button.active a, .project-status li.completed-button:hover a{
+background:url(images/completed-bg.png) repeat-x;
+color:White;
+}
+
+.project-status li.lost-button.active a, .project-status li.lost-button:hover a{
+background:url(images/lost-bg.png) repeat-x;
+color:White;
+}
