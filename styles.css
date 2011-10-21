@@ -1470,7 +1470,7 @@ background:url(images/contact-icons.png) no-repeat;
 .contact-address span.label {background-position:0px -95px;}
 
 
-.lightbox, .black-bg {display:none;}
+
 
 .contact-hover {
 background:white;
@@ -1492,7 +1492,6 @@ padding-top:20px;
 }
 
 .tri {
-abackground:blue;
 display:block;
 width:20px;
 height:20px;
